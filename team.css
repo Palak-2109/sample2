@@ -1,0 +1,78 @@
+.itemm1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* height: 100%; */
+}
+.heading{
+    font-size: 32px;
+    color: antiquewhite;
+}
+.line1{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 140px;
+}
+.line2{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height:300px;
+}
+.kirti , .anjali , .polo , .saloni
+{
+    display: flex;
+    flex-direction: column;
+    color: antiquewhite;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    /* background-color: aqua; */
+    height: 70px;
+}
+.links{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+.kirti{
+    width: 20%;
+}
+.anjali{
+    width: 20%;
+}
+.polo{
+    width: 20%;
+}
+.saloni{
+    width: 20%;
+}
+.palak_foto , .anjali_foto , .saloni_foto , .kirti_foto{
+    height: 250px;
+}
+.naam{
+    font-size: 22px;
+    /* height: 50px; */
+
+    align-items: center;
+}
+a{
+    color: antiquewhite;
+}
+.linkedin_id , .github_id{
+    font-size: 22px;
+}

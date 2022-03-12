@@ -1,0 +1,200 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 align = "center">Contact Us</h2>
+    <div class="register">
+    <form method="POST" class="check" action="https://script.google.com/macros/s/AKfycbxtwyEfvRAs-2rFP855aycNdbdGO3GCgd5mE78kFc2sdwYymvpNv4vx0Y6CLDocyBqO/exec">
+        
+        <input name="Email" type="email" class="input1" placeholder="Email" required>
+        <input name="Name" type="text" class="input1" placeholder="Name" required>
+        <input name = "Message" type="text" class="input1" placeholder="Message" required>
+        <button  type="submit" class="btnSubmit">Send</button>
+    </form>
+  </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bg.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="top">
+        <div class="left_top">
+          <img class="foto" src="foto.png" alt="" />
+        </div>
+        <div class="right_top"></div>
+      </div>
+      <div class="bottom">
+        <div class="left_bottom">
+          <div class="item1">
+            <!-- Start Contact Section -->
+            `
+            <div
+              class="w3-container w3-light-grey w3-padding-32 w3-padding-large"
+              id="contact"
+            >
+              <div class="w3-content" style="max-width: 600px">
+                <h4 class="text msg"><b>Message me!</b></h4>
+
+                <script type="text/javascript">
+                  var submitted = false;
+                </script>
+
+                <!--Update the URL for thank you page on form submit -->
+                <iframe
+                  name="hidden_iframe"
+                  id="hidden_iframe"
+                  style="display: none"
+                  onload="if(submitted) {window.location='https://palak-2109.github.io/main_page/contact.html/';}"
+                ></iframe>
+
+                <!-- Update the Google forms URL in action-->
+                <form
+                  action="https://docs.google.com/forms/d/e/1FAIpQLScUDqrIuAbFFE2obNLAlWBE8TGuhOQhay2TXAjZ6_ujoVQp2g/viewform"
+                  method="post"
+                  target="hidden_iframe"
+                  onsubmit="return validateForm(); "
+                >
+                  <div class="w3-section">
+                    <label>Name</label><br />
+                    <input
+                      class="w3-input w3-border"
+                      type="text"
+                      placeholder="Name"
+                      id="name"
+                      required
+                      name="entry.917053703"
+                    />
+                  </div>
+                  <div class="w3-section">
+                    <label>Email</label><br />
+                    <input
+                      class="w3-input w3-border"
+                      type="text"
+                      placeholder="Email"
+                      id="email"
+                      required
+                      name="entry.1894106829"
+                    />
+                  </div>
+                  <div class="w3-section">
+                    <label>Message</label><br />
+                    <input
+                      class="w3-input w3-border"
+                      type="text"
+                      placeholder="Message"
+                      id="message"
+                      required
+                      name="entry.654011033"
+                    />
+                  </div>
+                  <div class="w3-section">
+                    <button
+                      class="w3-button w3-block w3-black w3-margin-bottom"
+                      type="submit"
+                    >
+                      SEND
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <script type="text/javascript">
+                function validateName() {
+                  var name = document.getElementById('name').value;
+                  if (name.length == 0) {
+                    alert("Name can't be blank");
+                    return false;
+                  }
+                  if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+                    alert('Please enter your correct name'); //Validation Message
+                    return false;
+                  }
+                  return true;
+                }
+
+                function validatePhone() {
+                  var message = document.getElementById('message').value;
+                  if (message.length == 0) {
+                    alert("message can't be blank"); //Validation Message
+                    return false;
+                  }
+
+                  if (!message.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+                    alert('Please enter some text message'); //Validation Message
+                    return false;
+                  }
+
+                  return true;
+                }
+
+                function validateEmail() {
+                  var email = document.getElementById('email').value;
+                  if (email.length == 0) {
+                    alert("Email can't be blank"); //Validation Message
+                    return false;
+                  }
+
+                  if (
+                    !email.match(
+                      /^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/
+                    )
+                  ) {
+                    alert('Please enter a correct email address'); //Validation Message
+                    return false;
+                  }
+
+                  return true;
+                }
+
+                function validateForm() {
+                  if (!validateName() || !validatePhone() || !validateEmail()) {
+                    alert('Form not submitted'); //Validation Message
+                    return false;
+                  } else {
+                    submitted = true;
+                    return true;
+                  }
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="right_bottom">
+          <div class="item2">
+            <a href="/home.html" class="home">Home</a>
+            <a href="/features.html" class="features">Features</a>
+            <a href="/team.html" class="team">Team</a>
+            <a href="/contact.html" class="contact">Contact</a>
+          </div>
+          <img class="octocat" src="octocat.svg" alt="" />
+        </div>
+      </div>
+      <!-- <img class="octocat" src="octocat.svg" alt=""> -->
+
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+    </div>
+  </body>
+</html>
